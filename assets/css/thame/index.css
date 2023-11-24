@@ -1,0 +1,19 @@
+html {
+  --topBar-bg: linear-gradient(90deg, #61c73f, #29b94c);
+  --topBar-color: #fff;
+  --topBar-icon-filter: brightness(0) saturate(100%) invert(99%) sepia(3%)
+    saturate(1%) hue-rotate(102deg) brightness(104%) contrast(100%);
+  --logo-title-color: #e64545;
+  --logo-icon-filter: brightness(0) saturate(100%) invert(44%) sepia(33%)
+    saturate(3329%) hue-rotate(332deg) brightness(92%) contrast(97%);
+  --navbar-link-color: #4fc243;
+  --menu-mobile-filter: brightness(0) saturate(100%) invert(44%) sepia(33%)
+    saturate(3329%) hue-rotate(332deg) brightness(92%) contrast(97%);
+  --intro-item-info-color: #2e2e2e;
+  --intro-info-after-color: red;
+  --auth-content-bg: #fff;
+  --auth-desc-color: #9e9da8;
+  --auth-form-border-input-color: #d2d1d6;
+}
+
+/*# sourceMappingURL=index.css.map */

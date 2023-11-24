@@ -1,0 +1,48 @@
+@use "../abstracts";
+.header {
+  &__main {
+    height: 70px;
+    padding: 10px 0;
+  }
+  &__inner {
+    align-items: center;
+    @include abstracts.screen(lg) {
+      justify-content: space-between;
+    }
+  }
+}
+.navbar {
+  @include abstracts.screen(md) {
+    display: none;
+  }
+  margin-left: 100px;
+  @include abstracts.screen(lg) {
+    margin-left: 0;
+  }
+  &__link {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--navbar-link-color);
+    padding: 10px 20px;
+    @include abstracts.screen(lg) {
+      padding: 10px;
+      font-size: 1.7rem;
+      word-wrap: normal;
+    }
+  }
+  &__item--gt {
+    @include abstracts.screen(lg) {
+      display: none;
+    }
+  }
+}
+.menu-mobile {
+  &-icon {
+    display: none;
+    width: 40px;
+    filter: var(--menu-mobile-filter);
+    @include abstracts.screen(md) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use "../abstracts";
+.slider {
+  &__list {
+    height: 375px;
+    @include abstracts.screen(lg) {
+      height: 220px;
+    }
+    @include abstracts.screen(md) {
+      height: 150px;
+    }
+    @include abstracts.screen(sm) {
+      height: 120px;
+    }
+  }
+  &__thumb {
+    height: 100%;
+    width: 49%;
+  }
+}

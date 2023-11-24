@@ -1,0 +1,29 @@
+@use "../abstracts";
+.topBar {
+  background: var(--topBar-bg);
+  padding: 10px 0;
+  &__inner {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icon {
+    width: 17px;
+    margin-right: 10px;
+    rotate: 15deg;
+    filter: var(--topBar-icon-filter);
+  }
+  &__desc {
+    font-weight: 400;
+    color: var(--topBar-color);
+  }
+  &__link {
+    align-items: center;
+  }
+  &__btn {
+    @include abstracts.screen(md) {
+      height: 40px;
+      font-size: 1.6rem;
+      padding: 0 10px;
+    }
+  }
+}

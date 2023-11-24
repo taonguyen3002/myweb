@@ -1,0 +1,60 @@
+@use "../abstracts";
+.hero {
+  background-image: url(../image/thumb/backgroud-1.jpg);
+  opacity: 0.9;
+  &__wrap {
+    padding: 30px 0;
+  }
+  &__media {
+    @include abstracts.screen(md) {
+      display: none;
+    }
+  }
+}
+.formbooking {
+  position: relative;
+  background: #eee;
+  padding: 20px;
+  &__inner {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: blue;
+  }
+  &__item {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    height: 30px;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    &--icon1 {
+      color: #56c441;
+      &::before {
+        content: "\f21d";
+      }
+    }
+    &--icon2 {
+      color: red;
+      &::before {
+        content: "\f3c5";
+      }
+    }
+  }
+  &__input {
+    outline: none;
+    border: none;
+    background: none;
+  }
+  &__submit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,104 @@
+@use "../abstracts";
+.auth {
+  height: 100vh;
+  display: flex;
+  &__content,
+  &__intro {
+    flex: 1 0;
+    padding: 0 20px;
+  }
+  .flex-template {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__intro {
+    position: relative;
+    @extend .flex-template;
+    &--text {
+      margin-top: 49px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 144.444%;
+      max-width: 412px;
+    }
+    &-arrow,
+    &-logo {
+      position: absolute;
+      translate: -50%;
+      left: 50%;
+    }
+    &-arrow {
+      bottom: 50px;
+    }
+    &-logo {
+      top: 80px;
+    }
+  }
+  &__img {
+    max-width: 422px;
+    object-fit: cover;
+    @include abstracts.screen(md) {
+      max-width: 322px;
+    }
+  }
+  &__content {
+    background: var(--auth-content-bg);
+    @include abstracts.screen(md) {
+      position: fixed;
+      inset: 0;
+      z-index: 2;
+      translate: 100%;
+      transition: translate 0.3s;
+      overflow-y: auto;
+      &.show {
+        translate: 0;
+      }
+    }
+
+    &-inner {
+      @extend .flex-template;
+      height: 100%;
+      text-align: center;
+      width: min(460px, 100%);
+      margin: 0 auto;
+    }
+  }
+  &__heading {
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 146.667%;
+  }
+  &__link {
+    color: #0071dc;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 146.667%;
+  }
+  &__desc {
+    @extend .auth__link;
+    margin-top: 10px;
+    padding: 0 30px;
+    color: var(--auth-desc-color);
+  }
+  &__form {
+    margin-top: 60px;
+    width: 100%;
+  }
+  &__text {
+    margin-top: 108px;
+    color: #9e9da8;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 144.444%;
+    .auth__link {
+      margin-left: 10px;
+    }
+  }
+  &__btn.form__group {
+    margin-top: 50px;
+  }
+}
