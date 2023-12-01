@@ -29,6 +29,8 @@
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="./js/scripts.js"></script>
+    <script src="./js/rewrite_subdomain.js"></script>
+
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -131,15 +133,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- end favicon -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var currentPath = window.location.pathname;
-        if (currentPath.endsWith(".html") && currentPath !== "/index.html") {
-          var newPath = currentPath.slice(0, -5); // Loại bỏ ".html"
-          window.location.replace(newPath);
-        }
-      });
-    </script>
   </head>
   <body>
     <header id="header" class="header"></header>
