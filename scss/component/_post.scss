@@ -1,0 +1,93 @@
+@use "../abstracts";
+.post {
+  &__inner {
+    margin: 60px 0;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 30px;
+    text-align: start;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ccc;
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    border-radius: 30px 0 30px 0;
+    @include abstracts.screen(xl) {
+      height: 270px;
+    }
+    @include abstracts.screen(lg) {
+      gap: 20px;
+    }
+    @include abstracts.screen(sm) {
+      padding: 20px;
+      height: 150px;
+    }
+    + .post__item {
+      margin-top: 30px;
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 2.4rem;
+      color: rgb(224, 63, 45);
+      line-height: 1.4;
+      @include abstracts.screen(lg) {
+        font-size: 2.2rem;
+        line-height: 1.2;
+      }
+      @include abstracts.screen(md) {
+        font-size: 1.7rem;
+      }
+    }
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &__media {
+    height: 100%;
+    @include abstracts.screen(sm) {
+      width: 120px;
+    }
+    @include abstracts.screen(md) {
+      width: 80px;
+    }
+  }
+  &__thumb {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+    @include abstracts.screen(lg) {
+      width: 200px;
+    }
+    @include abstracts.screen(sm) {
+      width: 120px;
+    }
+    @include abstracts.screen(md) {
+      width: 80px;
+    }
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    @include abstracts.screen(lg) {
+      line-height: 1.2;
+    }
+    @include abstracts.screen(sm) {
+      display: none;
+    }
+  }
+  &__btn {
+    @include abstracts.screen(sm) {
+      display: none;
+    }
+  }
+}
