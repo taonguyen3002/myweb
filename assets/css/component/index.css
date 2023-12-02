@@ -588,4 +588,36 @@
   }
 }
 
+.table {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid #ccc;
+  background: #fff;
+}
+.table tr {
+  border: 2px solid #ccc;
+}
+.table tr td:first-child,
+.table tr th:first-child {
+  width: 150px;
+  text-align: center;
+  border: 2px solid #ccc;
+}
+.table tr:nth-of-type(odd) td {
+  background: #e2e0e0;
+}
+.table th {
+  padding: 10px;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.table td {
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=index.css.map */
