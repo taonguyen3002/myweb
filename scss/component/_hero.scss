@@ -1,6 +1,6 @@
 @use "../abstracts";
 .hero {
-  background-image: url(../image/thumb/backgroud-1.jpg);
+  background: #13d664c0;
   opacity: 0.9;
   &__wrap {
     padding: 30px 0;
@@ -28,6 +28,8 @@
     color: blue;
   }
   &__item {
+    display: flex;
+    gap: 10px;
     border: 1px solid #ccc;
     padding: 5px 10px;
     height: 30px;
@@ -48,6 +50,7 @@
     }
   }
   &__input {
+    width: 100%;
     outline: none;
     border: none;
     background: none;

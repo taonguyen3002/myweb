@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grab 2 bánh , Taxi 4-7 chỗ</title>
+    <title>Dịch vụ đặt xe trực tuyến - xe ôm - taxi</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,33 +21,7 @@
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="./js/scripts.js"></script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PTBB2TND");
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-7BEQS1Q992"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-7BEQS1Q992");
-    </script>
+    <!-- google search console -->
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -123,6 +97,33 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- end favicon -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PTBB2TND");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7BEQS1Q992"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7BEQS1Q992");
+    </script>
   </head>
   <body>
     <header id="header" class="header"></header>
@@ -134,16 +135,27 @@
         <section class="slider">
           <div class="slider-wrap">
             <div class="slider__list">
-              <img
-                src="./assets/image/thumb/slider1.jpg"
-                alt=""
-                class="slider__thumb"
-              />
-              <img
-                src="./assets/image/thumb/slider3.jpg"
-                alt=""
-                class="slider__thumb"
-              />
+              <figure class="slider__media">
+                <img
+                  src="./assets/image/thumb/slider/slider01.png"
+                  alt="đặt xe công nghệ"
+                  class="slider__thumb"
+                />
+              </figure>
+              <figure class="slider__media">
+                <img
+                  src="./assets/image/thumb/slider/slider02.jpg"
+                  alt="đặt xe công nghệ"
+                  class="slider__thumb"
+                />
+              </figure>
+              <figure class="slider__media">
+                <img
+                  src="./assets/image/thumb/slider/slider03.png"
+                  alt="đặt xe công nghệ"
+                  class="slider__thumb"
+                />
+              </figure>
             </div>
           </div>
         </section>
@@ -312,7 +324,7 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-1.jpg"
+                    src="./assets/image/thumb/customer/customer-1.jpg"
                     alt=""
                     class="customer__thumb"
                   />
@@ -355,7 +367,7 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-2.jpg"
+                    src="./assets/image/thumb/customer/customer-2.jpg"
                     alt=""
                     class="customer__thumb"
                   />
@@ -401,7 +413,7 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-3.jpg"
+                    src="./assets/image/thumb/customer/customer-3.jpg"
                     alt=""
                     class="customer__thumb"
                   />
@@ -443,7 +455,7 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-4.png"
+                    src="./assets/image/thumb/customer/customer-4.png"
                     alt=""
                     class="customer__thumb"
                   />
@@ -486,88 +498,124 @@
           </div>
         </div>
       </section>
-      <section class="post">
-        <div class="container">
-          <div class="post__inner">
-            <h2 class="post__title">Một số bài viết nổi bật</h2>
-            <ul class="post__list">
-              <li class="post__item">
-                <a href="./grabdongnai.html">
-                  <figure class="post__media">
-                    <img
-                      src="./assets/image/thumb/post1.jpg"
-                      alt="grab dong nai"
-                      class="post__thumb"
-                    />
-                  </figure>
-                  <div class="post__item-wrap">
-                    <h3 class="post__item-title">
-                      Grab Đồng Nai: Dịch vụ gọi xe tiện lợi và an toàn
-                    </h3>
-                    <p class="post__desc">
-                      Grab Đồng Nai: Dịch vụ gọi xe tiện lợi và an toàn,sự lựa
-                      chọn hoàn hảo cho nhu cầu di chuyển và vận chuyển hàng hóa
-                      một cách nhanh chóng dành cho bạn
-                    </p>
-                    <button class="post__btn btn--rounded btn btn--primary">
-                      <a href="./grabdongnai.html">Đọc Bài Viết</a>
-                    </button>
-                  </div>
-                </a>
-              </li>
-              <li class="post__item">
-                <a href="./grabgiaohang.html">
-                  <figure class="post__media">
-                    <img
-                      src="./assets/image/thumb/grabgiaohang-1.png"
-                      alt="grab giao hang"
-                      class="post__thumb"
-                    />
-                  </figure>
-                  <div class="post__item-wrap">
-                    <h3 class="post__item-title">
-                      Grab Giao Hàng: Dịch Vụ Giao Hàng Nhanh Chóng Và Tiết Kiệm
-                      Chi Phí
-                    </h3>
-                    <p class="post__desc">
-                      grab giao hàng:giải pháp vận chuyển hàng hóa an toàn tiết
-                      kiệm dành cho bạn,dịch vụ giao hàng nhanh chóng hiện đại
-                      nhất khu vực
-                    </p>
-                    <button class="post__btn btn--rounded btn btn--primary">
-                      <a href="./grabdongnai.html">Đọc Bài Viết</a>
-                    </button>
-                  </div>
-                </a>
-              </li>
-              <li class="post__item">
-                <a href="./grabbienhoa.html">
-                  <figure class="post__media">
-                    <img
-                      src="https://vccinews.vn/upload/photos/2022/8/large/vbf-2022841673swn.jpg"
-                      alt="grab giao hang"
-                      class="post__thumb"
-                    />
-                  </figure>
-                  <div class="post__item-wrap">
-                    <h3 class="post__item-title">
-                      Grab Biên Hòa Đồng Nai - Giải pháp di chuyển thuận tiện,
-                      an toàn
-                    </h3>
-                    <p class="post__desc">
-                      grab biên hòa đồng nai giải pháp tối ưu cho giải pháp di
-                      chuyển , giao hàng.dịch vụ hiện đại an toàn và tiết kiệm
-                    </p>
-                    <button class="post__btn btn--rounded btn btn--primary">
-                      <a href="./grabdongnai.html">Đọc Bài Viết</a>
-                    </button>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+      <article class="viewpost">
+        <div class="viewpost__inner">
+          <h2 class="viewpost__heading">Một số bài viết liên quan</h2>
+          <ul class="viewpost__list">
+            <!-- grab biên hòa -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post01.jpg"
+                    alt="Grab Biên Hòa"
+                    class="viewpost__thumb"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a href="https://datxenhanht247.pro/post/grab-bien-hoa"
+                    >Grab Biên Hòa - Tổng đài đặt xe Biên Hòa Đồng nai
+                    0550.429.479</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Biên Hòa - Dịch vụ tư vấn khách hàng , tham khảo giá cả ,
+                  khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ Biên
+                  Hòa giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a href="https://datxenhanht247.pro/post/grab-bien-hoa"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab long an -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post02.jpg"
+                    alt="Grab Long An"
+                    class="viewpost__thumb"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a href="https://goixetructuyen.click/post/grab-long-an"
+                    >Grab Long An - Tổng đài đặt xe Long An 0550.429.479</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Long An - Dịch vụ tư vấn khách hàng , tham khảo giá cả ,
+                  khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ Long
+                  An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a href="https://goixetructuyen.click/post/grab-long-an"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab trảng bom -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post03.jpg"
+                    alt="Grab Trảng Bom"
+                    class="viewpost__thumb"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a href="https://datxenhanht247.pro/post/grab-trang-bom"
+                    >Grab Trảng Bom - Tổng đài đặt xe Trảng Bom 0550.429.479</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Trảng Bom - Dịch vụ tư vấn khách hàng , tham khảo giá cả
+                  , khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ
+                  Long An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a href="https://datxenhanht247.pro/post/grab-trang-bom"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab Long Thành -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post04.jpg"
+                    alt="Grab Long Thành"
+                    class="viewpost__thumb"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a href="https://datxenhanht247.pro/post/grab-long-thanh"
+                    >Grab Long Thành - Tổng đài đặt xe Long Thành
+                    0550.429.479</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Long Thành - Dịch vụ tư vấn khách hàng , tham khảo giá cả
+                  , khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ
+                  Long An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a href="https://datxenhanht247.pro/post/grab-long-thanh"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+          </ul>
         </div>
-      </section>
+      </article>
       <section class="contact">
         <div class="contact__item">
           <div class="contact__zalo">

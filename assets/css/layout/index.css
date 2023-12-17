@@ -100,6 +100,9 @@
   color: #0071dc;
 }
 .footer__logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   margin-bottom: 30px;
 }
 .footer__label {

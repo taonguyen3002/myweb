@@ -17,6 +17,7 @@
     background: #e2e0e0;
   }
   th {
+    background: #e2e0e0;
     padding: 10px;
     line-height: 1.4;
     font-weight: 600;
@@ -27,5 +28,9 @@
     font-weight: 400;
     font-size: 1.8rem;
     padding: 10px;
+  }
+  &__mid {
+    width: 50%;
+    border-right: 2px solid #ccc;
   }
 }
