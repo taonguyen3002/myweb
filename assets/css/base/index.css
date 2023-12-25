@@ -172,6 +172,13 @@ button {
   filter: var(--icon-color);
 }
 
+.text--green {
+  color: #00ba51 !important;
+}
+.text--center {
+  text-align: center !important;
+}
+
 textarea,
 button,
 input,
@@ -182,8 +189,8 @@ select {
 
 @media (max-width: 767.98px) {
   .container {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
