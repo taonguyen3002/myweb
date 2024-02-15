@@ -1,6 +1,5 @@
 .auth {
-  background: #fff;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
 }
 .auth__content, .auth__intro {
@@ -10,12 +9,11 @@
 .auth .flex-template, .auth .auth__content-inner, .auth .auth__intro {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 .auth__intro {
-  background: var(--auth-intro-bg);
   position: relative;
-  justify-content: center;
 }
 .auth__intro--text {
   margin-top: 49px;
@@ -24,7 +22,6 @@
   font-weight: 500;
   line-height: 144.444%;
   max-width: 412px;
-  color: var(--auth-intro-text-color);
 }
 .auth__intro-arrow, .auth__intro-logo {
   position: absolute;
@@ -38,8 +35,13 @@
   top: 80px;
 }
 .auth__img {
-  width: var(--width);
-  max-width: 100%;
+  max-width: 422px;
+  object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .auth__img {
+    max-width: 322px;
+  }
 }
 .auth__content {
   background: var(--auth-content-bg);
@@ -53,15 +55,12 @@
     transition: translate 0.3s;
     overflow-y: auto;
   }
-  .auth__content-signin {
-    translate: 0;
-  }
   .auth__content.show {
     translate: 0;
   }
 }
 .auth__content-inner {
-  padding: 50px 0;
+  height: 100%;
   text-align: center;
   width: min(460px, 100%);
   margin: 0 auto;
@@ -71,7 +70,6 @@
   font-size: 3rem;
   font-weight: 500;
   line-height: 146.667%;
-  color: var(--auth-heading-color);
 }
 .auth__link, .auth__desc {
   color: #0071dc;
@@ -81,7 +79,7 @@
 }
 .auth__desc {
   margin-top: 10px;
-  padding: 0 20px;
+  padding: 0 30px;
   color: var(--auth-desc-color);
 }
 .auth__form {
@@ -185,11 +183,6 @@
   border-radius: 30px 0 30px 0;
   background: rgba(19, 214, 100, 0.7529411765);
 }
-@media (max-width: 767.98px) {
-  .post__media {
-    padding-top: 68%;
-  }
-}
 .post__img {
   width: 100%;
   object-fit: cover;
@@ -200,11 +193,11 @@
   border-radius: 30px 0 30px 0;
 }
 .post__title {
-  line-height: 1.5;
-  margin: 30px 0;
+  margin-top: 30px;
   font-weight: 500;
   font-size: 3rem;
   color: #ed1d26;
+  margin-bottom: 30px;
 }
 .post__list {
   margin-top: 30px;
@@ -271,19 +264,6 @@
   top: 50%;
   translate: 0 -50%;
   border-color: transparent transparent black black;
-}
-.post__wrap {
-  display: flex;
-  align-items: center;
-  padding-bottom: 20px;
-  gap: 30px;
-  margin-top: 30px;
-  border-bottom: 1.5px solid #ccc;
-}
-.post__wrap-icon {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
 }
 
 /*# sourceMappingURL=index.css.map */

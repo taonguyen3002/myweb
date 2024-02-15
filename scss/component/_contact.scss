@@ -1,31 +1,45 @@
 @use "../abstracts";
 .contact {
-  display: none;
-  bottom: 0;
-  left: 0;
-  height: 11vh;
-  width: 100%;
-  background: #fff;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
   @include abstracts.screen(md) {
-    display: flex;
-    position: fixed;
-  }
-  @include abstracts.screen(sm) {
-    height: 8vh;
+    bottom: 20px;
+    right: 15px;
+    gap: 10px;
   }
   &__item {
-    background: #eee;
+    background: #fff;
     position: relative;
-    width: 50%;
-    padding: 10px;
-    border-right: 2px solid #ccc;
+    padding: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 50%;
+    z-index: 100;
+    @include abstracts.screen(md) {
+      padding: 10px;
+      width: 70px;
+      height: 70px;
+    }
   }
-  &__icon {
-    position: absolute;
-    width: 35px;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    object-fit: cover;
+  &__phone {
+    animation: phonerotate infinite;
+    animation-duration: 0.5s;
+  }
+}
+@keyframes phonerotate {
+  10% {
+    rotate: 15deg;
+  }
+  25% {
+    rotate: -15deg;
+  }
+  35% {
+    rotate: -15deg;
+  }
+  50% {
+    rotate: 15deg;
   }
 }
